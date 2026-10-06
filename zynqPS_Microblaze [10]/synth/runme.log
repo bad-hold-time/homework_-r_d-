@@ -1,0 +1,841 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 13-aug-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Tue Oct  6 17:02:16 2026
+# Process ID         : 21836
+# Current directory  : C:/Users/saull/lesson10/lesson10.runs/synth_1
+# Command line       : vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file           : C:/Users/saull/lesson10/lesson10.runs/synth_1/design_1_wrapper.vds
+# Journal file       : C:/Users/saull/lesson10/lesson10.runs/synth_1\vivado.jou
+# Running On         : DESKTOP-FHIJOJV
+# Platform           : Windows 10
+# Operating System   : 19045
+# Processor Detail   : Intel(R) Core(TM) i3-9100F CPU @ 3.60GHz
+# CPU Frequency      : 3600 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 4
+# Host memory        : 17084 MB
+# Swap memory        : 11811 MB
+# Total Virtual      : 28895 MB
+# Available Virtual  : 9611 MB
+#-----------------------------------------------------------
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Tue Oct  6 17:02:16 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 610.188 ; gain = 269.406
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2026.1/Vivado/data/ip'.
+Command: synth_design -top design_1_wrapper -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Designutils 20-5008] Incremental synthesis strategy default
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18448
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1419.281 ; gain = 577.055
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/synth/design_1_axi_gpio_0_0.vhd:84]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 4 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 1 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT bound to: 32'b11111111111111111111111111111111 
+	Parameter C_IS_DUAL bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
+INFO: [Synth 8-3491] module 'axi_gpio' declared at 'c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:1255' bound to instance 'U0' of component 'axi_gpio' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/synth/design_1_axi_gpio_0_0.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:1341]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:2341]
+INFO: [Synth 8-3919] null assignment ignored [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:2370]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:182]
+INFO: [Synth 8-226] default block is never used [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:447]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_array_single' declared at 'C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903' bound to instance 'INPUT_DOUBLE_REGS3' of component 'xpm_cdc_array_single' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:458]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single' [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single' (0#1) [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:182]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:1341]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_0_0' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/synth/design_1_axi_gpio_0_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_1_0' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/synth/design_1_axi_gpio_1_0.vhd:84]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 4 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 1 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT bound to: 32'b11111111111111111111111111111111 
+	Parameter C_IS_DUAL bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
+INFO: [Synth 8-3491] module 'axi_gpio' declared at 'c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:1255' bound to instance 'U0' of component 'axi_gpio' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/synth/design_1_axi_gpio_1_0.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio__parameterized1' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:1341]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core__parameterized0' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:182]
+INFO: [Synth 8-226] default block is never used [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:447]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_array_single' declared at 'C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903' bound to instance 'INPUT_DOUBLE_REGS3' of component 'xpm_cdc_array_single' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:458]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core__parameterized0' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:182]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio__parameterized1' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:1341]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_1_0' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/synth/design_1_axi_gpio_1_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_2_0' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/synth/design_1_axi_gpio_2_0.vhd:84]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 2 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 1 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT bound to: 32'b11111111111111111111111111111111 
+	Parameter C_IS_DUAL bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
+INFO: [Synth 8-3491] module 'axi_gpio' declared at 'c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:1255' bound to instance 'U0' of component 'axi_gpio' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/synth/design_1_axi_gpio_2_0.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio__parameterized3' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:1341]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core__parameterized1' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:182]
+INFO: [Synth 8-226] default block is never used [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:447]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_array_single' declared at 'C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903' bound to instance 'INPUT_DOUBLE_REGS3' of component 'xpm_cdc_array_single' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:458]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single__parameterized2' [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single__parameterized2' (0#1) [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core__parameterized1' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:182]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio__parameterized3' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:1341]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_2_0' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/synth/design_1_axi_gpio_2_0.vhd:84]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_0' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/synth/design_1_axi_smc_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_afc3' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'bd_afc3_sc_ul_0' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_0/synth/bd_afc3_sc_ul_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (0#1) [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'bd_afc3_sc_ul_0' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_0/synth/bd_afc3_sc_ul_0.sv:53]
+WARNING: [Synth 8-7071] port 'aresetn_out' of module 'bd_afc3_sc_ul_0' is unconnected for instance 'sc_ul' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:362]
+WARNING: [Synth 8-7071] port 'pc_asserted' of module 'bd_afc3_sc_ul_0' is unconnected for instance 'sc_ul' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:362]
+WARNING: [Synth 8-7071] port 'pc_status' of module 'bd_afc3_sc_ul_0' is unconnected for instance 'sc_ul' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:362]
+WARNING: [Synth 8-7023] instance 'sc_ul' of module 'bd_afc3_sc_ul_0' has 119 connections declared, but only 116 given [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:362]
+INFO: [Synth 8-6155] done synthesizing module 'bd_afc3' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_0' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/synth/design_1_axi_smc_0.v:53]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/synth/design_1.v:211]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/synth/design_1.v:211]
+WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/synth/design_1.v:211]
+WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/synth/design_1.v:211]
+WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/synth/design_1.v:211]
+WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/synth/design_1.v:211]
+WARNING: [Synth 8-7071] port 'M03_AXI_awprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/synth/design_1.v:211]
+WARNING: [Synth 8-7071] port 'M03_AXI_arprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/synth/design_1.v:211]
+WARNING: [Synth 8-7023] instance 'axi_smc' of module 'design_1_axi_smc_0' has 116 connections declared, but only 108 given [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/synth/design_1.v:211]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_timer_0_0' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/synth/design_1_axi_timer_0_0.vhd:90]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_COUNT_WIDTH bound to: 32 - type: integer 
+	Parameter C_ONE_TIMER_ONLY bound to: 0 - type: integer 
+	Parameter C_TRIG0_ASSERT bound to: 1'b1 
+	Parameter C_TRIG1_ASSERT bound to: 1'b1 
+	Parameter C_GEN0_ASSERT bound to: 1'b1 
+	Parameter C_GEN1_ASSERT bound to: 1'b1 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'axi_timer' declared at 'c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1985' bound to instance 'U0' of component 'axi_timer' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/synth/design_1_axi_timer_0_0.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'axi_timer' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:2040]
+INFO: [Synth 8-638] synthesizing module 'tc_core' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1599]
+INFO: [Synth 8-638] synthesizing module 'mux_onehot_f' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:267]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-6157] synthesizing module 'MUXCY' [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727]
+INFO: [Synth 8-6155] done synthesizing module 'MUXCY' (0#1) [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:104727' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:364]
+INFO: [Synth 8-256] done synthesizing module 'mux_onehot_f' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:267]
+INFO: [Synth 8-638] synthesizing module 'count_module' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1331]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1367]
+INFO: [Synth 8-638] synthesizing module 'counter_f' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:102]
+INFO: [Synth 8-256] done synthesizing module 'counter_f' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:102]
+INFO: [Synth 8-256] done synthesizing module 'count_module' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1331]
+INFO: [Synth 8-638] synthesizing module 'timer_control' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:741]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:830]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:830]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:830]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:830]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:830]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:830]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:830]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:830]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:830]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:830]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:830]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:830]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:911]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:911]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:911]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:911]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:911]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:911]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:911]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:911]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:911]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:911]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:911]
+INFO: [Synth 8-113] binding component instance 'READ_DONE0_I' to cell 'FDRSE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:983]
+INFO: [Synth 8-113] binding component instance 'READ_DONE1_I' to cell 'FDRSE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:993]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'INPUT_DOUBLE_REGS3' of component 'xpm_cdc_single' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1003]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'INPUT_DOUBLE_REGS' of component 'xpm_cdc_single' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1070]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'INPUT_DOUBLE_REGS2' of component 'xpm_cdc_single' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1085]
+INFO: [Synth 8-256] done synthesizing module 'timer_control' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:741]
+INFO: [Synth 8-113] binding component instance 'PWM_FF_I' to cell 'FDRS' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1805]
+INFO: [Synth 8-256] done synthesizing module 'tc_core' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:1599]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif__parameterized0' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment__parameterized0' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:2341]
+INFO: [Synth 8-3919] null assignment ignored [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:2370]
+INFO: [Synth 8-638] synthesizing module 'address_decoder__parameterized0' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized3' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized3' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized4' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized4' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized5' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized5' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized6' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized6' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized7' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized7' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized8' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized8' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized9' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized9' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized10' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized10' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder__parameterized0' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment__parameterized0' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif__parameterized0' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'axi_timer' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/c960/hdl/axi_timer_v2_0_rfs.vhd:2040]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_timer_0_0' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/synth/design_1_axi_timer_0_0.vhd:90]
+WARNING: [Synth 8-7071] port 'generateout0' of module 'design_1_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/synth/design_1.v:320]
+WARNING: [Synth 8-7071] port 'generateout1' of module 'design_1_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/synth/design_1.v:320]
+WARNING: [Synth 8-7071] port 'pwm0' of module 'design_1_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/synth/design_1.v:320]
+WARNING: [Synth 8-7023] instance 'axi_timer_0' of module 'design_1_axi_timer_0_0' has 26 connections declared, but only 23 given [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/synth/design_1.v:320]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6157] synthesizing module 'BIBUF' [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:2325]
+INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (0#1) [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:2325]
+INFO: [Synth 8-6157] synthesizing module 'PS7' [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:145709]
+INFO: [Synth 8-6155] done synthesizing module 'PS7' (0#1) [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:145709]
+INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
+INFO: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:272]
+INFO: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:272]
+INFO: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:272]
+INFO: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:272]
+INFO: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:272]
+INFO: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:272]
+INFO: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:272]
+INFO: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:272]
+INFO: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:272]
+INFO: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:272]
+INFO: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:272]
+INFO: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:272]
+INFO: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:272]
+INFO: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:272]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_50M_0' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/synth/design_1_rst_ps7_0_50M_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:1243' bound to instance 'U0' of component 'proc_sys_reset' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/synth/design_1_rst_ps7_0_50M_0.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:1302]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:1371]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:1387]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:1413]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:1436]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:1460]
+INFO: [Synth 8-638] synthesizing module 'lpf' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:821]
+INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:170733' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:873]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:170733]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:170733]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'ACT_LO_EXT' of component 'xpm_cdc_single' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:968]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'ACT_LO_AUX' of component 'xpm_cdc_single' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:1015]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:821]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:304]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:304]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:1302]
+INFO: [Synth 8-256] done synthesizing module 'design_1_rst_ps7_0_50M_0' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/synth/design_1_rst_ps7_0_50M_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/synth/design_1.v:391]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/synth/design_1.v:391]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/synth/design_1.v:391]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/synth/design_1.v:391]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'design_1_rst_ps7_0_50M_0' has 10 connections declared, but only 6 given [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/synth/design_1.v:391]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [C:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:323]
+INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[1].GPIO_DBus_i_reg was removed.  [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:323]
+INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[2].GPIO_DBus_i_reg was removed.  [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:323]
+INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[3].GPIO_DBus_i_reg was removed.  [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:323]
+INFO: [Synth 8-6014] Unused sequential element Not_Dual.gpio_Data_In_reg was removed.  [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:485]
+INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:355]
+INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[1].GPIO_DBus_i_reg was removed.  [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:355]
+INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[2].GPIO_DBus_i_reg was removed.  [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:355]
+INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[3].GPIO_DBus_i_reg was removed.  [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:355]
+INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:355]
+INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[1].GPIO_DBus_i_reg was removed.  [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ipshared/6ccd/hdl/axi_gpio_v2_0_rfs.vhd:355]
+WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_single is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_COL in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_CRS in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RX_DV in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RX_ER in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[7] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[6] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[5] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[4] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_COL in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_CRS in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RX_DV in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RX_ER in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[7] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[6] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[5] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[4] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP0_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP0_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP1_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP1_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ACP_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ACP_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP0_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP0_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP1_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP1_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP2_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP2_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP3_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP3_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG3_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG2_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG1_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG0_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[31] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[30] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[29] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[28] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[27] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[26] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[25] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[24] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[23] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[22] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[21] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[20] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[19] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[18] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[17] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[16] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[15] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[14] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[13] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[12] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[11] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[10] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[9] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[8] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[7] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[6] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[5] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[4] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_VALID in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[3] in module address_decoder__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[4] in module address_decoder__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus_RNW in module address_decoder__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[3] in module slave_attachment__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[2] in module slave_attachment__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[1] in module slave_attachment__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[0] in module slave_attachment__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2ip_data[0] in module timer_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2ip_data[1] in module timer_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2ip_data[2] in module timer_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2ip_data[3] in module timer_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2ip_data[4] in module timer_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2ip_data[5] in module timer_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2ip_data[6] in module timer_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2ip_data[7] in module timer_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2ip_data[8] in module timer_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2ip_data[9] in module timer_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2ip_data[10] in module timer_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2ip_data[11] in module timer_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2ip_data[12] in module timer_control is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1655.363 ; gain = 813.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1655.363 ; gain = 813.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1655.363 ; gain = 813.137
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.691 . Memory (MB): peak = 1655.363 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 91 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_0/bd_afc3_sc_ul_0_cdc.xdc] for cell 'design_1_i/axi_smc/inst/sc_ul/inst'
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter REF_PIN_NAME=~*CLR -of_objects [get_cells -hierarchical -filter {NAME =~ *si_checker_inst/*}]'. [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_0/bd_afc3_sc_ul_0_cdc.xdc:21]
+Finished Parsing XDC File [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_0/bd_afc3_sc_ul_0_cdc.xdc] for cell 'design_1_i/axi_smc/inst/sc_ul/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_0/bd_afc3_sc_ul_0_cdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/smartconnect.xdc] for cell 'design_1_i/axi_smc/inst'
+Finished Parsing XDC File [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/smartconnect.xdc] for cell 'design_1_i/axi_smc/inst'
+Parsing XDC File [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_board.xdc] for cell 'design_1_i/axi_gpio_1/U0'
+Finished Parsing XDC File [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_board.xdc] for cell 'design_1_i/axi_gpio_1/U0'
+Parsing XDC File [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/design_1_axi_gpio_2_0_board.xdc] for cell 'design_1_i/axi_gpio_2/U0'
+Finished Parsing XDC File [c:/Users/saull/lesson10/lesson10.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/design_1_axi_gpio_2_0_board.xdc] for cell 'design_1_i/axi_gpio_2/U0'
+Parsing XDC File [C:/Users/saull/lesson10/lesson10.srcs/constrs_1/new/constr.xdc]
+Finished Parsing XDC File [C:/Users/saull/lesson10/lesson10.srcs/constrs_1/new/constr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/saull/lesson10/lesson10.srcs/constrs_1/new/constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/saull/lesson10/lesson10.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/saull/lesson10/lesson10.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/saull/lesson10/lesson10.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 9 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1731.453 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 27 instances were transformed.
+  FDRS => FDRS (FDRE, LUT2, VCC): 1 instance 
+  FDRSE => FDRSE (FDRE, LUT4, VCC): 25 instances
+  SRL16 => SRL16E: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.082 . Memory (MB): peak = 1735.930 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1735.930 ; gain = 893.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1735.930 ; gain = 893.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1735.930 ; gain = 893.703
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_write.w_state_reg' in module 'sc_ultralite_v1_0_1_sasd_lite'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_read.r_state_reg' in module 'sc_ultralite_v1_0_1_sasd_lite'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  R_IDLE |                              000 | 00000000000000000000000000000000
+                   R_ARB |                              001 | 00000000000000000000000000000001
+                R_TARGET |                              010 | 00000000000000000000000000000010
+                 R_WIDTH |                              011 | 00000000000000000000000000000011
+                    R_RX |                              100 | 00000000000000000000000000000100
+                    R_TX |                              101 | 00000000000000000000000000000101
+                R_DECERR |                              110 | 00000000000000000000000000000110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_read.r_state_reg' using encoding 'sequential' in module 'sc_ultralite_v1_0_1_sasd_lite'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  W_IDLE |                              000 | 00000000000000000000000000000000
+                   W_ARB |                              001 | 00000000000000000000000000000001
+                W_TARGET |                              010 | 00000000000000000000000000000010
+                    W_RX |                              011 | 00000000000000000000000000000011
+                    W_TX |                              100 | 00000000000000000000000000000100
+                  W_NULL |                              101 | 00000000000000000000000000000101
+              W_COMPLETE |                              110 | 00000000000000000000000000000111
+               W_RECOVER |                              111 | 00000000000000000000000000000110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_write.w_state_reg' using encoding 'sequential' in module 'sc_ultralite_v1_0_1_sasd_lite'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment__parameterized0'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 1735.930 ; gain = 893.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (FDRE_inst) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:25 . Memory (MB): peak = 1769.484 ; gain = 927.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:01:34 . Memory (MB): peak = 2024.660 ; gain = 1182.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:29 ; elapsed = 00:01:37 . Memory (MB): peak = 2099.410 ; gain = 1257.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:31 ; elapsed = 00:01:39 . Memory (MB): peak = 2112.219 ; gain = 1269.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:39 ; elapsed = 00:01:48 . Memory (MB): peak = 2316.691 ; gain = 1474.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:39 ; elapsed = 00:01:48 . Memory (MB): peak = 2316.691 ; gain = 1474.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:39 ; elapsed = 00:01:49 . Memory (MB): peak = 2316.691 ; gain = 1474.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:39 ; elapsed = 00:01:49 . Memory (MB): peak = 2316.691 ; gain = 1474.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:39 ; elapsed = 00:01:49 . Memory (MB): peak = 2316.691 ; gain = 1474.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:39 ; elapsed = 00:01:49 . Memory (MB): peak = 2316.691 ; gain = 1474.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BIBUF  |   130|
+|2     |BUFG   |     1|
+|3     |CARRY4 |    36|
+|4     |LUT1   |    44|
+|5     |LUT2   |   155|
+|6     |LUT3   |   176|
+|7     |LUT4   |   190|
+|8     |LUT5   |   145|
+|9     |LUT6   |   373|
+|10    |MUXCY  |    64|
+|11    |MUXF7  |     1|
+|12    |PS7    |     1|
+|13    |SRL16  |     1|
+|14    |FDRE   |   897|
+|15    |FDSE   |    13|
+|16    |IBUF   |     6|
+|17    |OBUF   |     4|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:39 ; elapsed = 00:01:49 . Memory (MB): peak = 2316.691 ; gain = 1474.465
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 78947 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:02 ; elapsed = 00:01:40 . Memory (MB): peak = 2316.691 ; gain = 1393.898
+Synthesis Optimization Complete : Time (s): cpu = 00:01:40 ; elapsed = 00:01:49 . Memory (MB): peak = 2316.691 ; gain = 1474.465
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 2316.691 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 102 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2326.980 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 33 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 32 instances
+  SRL16 => SRL16E: 1 instance 
+
+Synth Design complete | Checksum: 7018f7cc
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+319 Infos, 127 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:46 ; elapsed = 00:02:00 . Memory (MB): peak = 2326.980 ; gain = 1700.859
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2326.980 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/saull/lesson10/lesson10.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  6 17:04:34 2026...
